@@ -379,3 +379,35 @@ render() returns JSX
 =====
 delEvent={(id) => this.deleteFriend(id)}/>
 
+Why bind is required?
+
+```
+let product = {
+    "id": 123,
+    "name" : "iPhone 15",
+    "updateName" : function(n) {
+        this.name = n
+    }
+}
+
+product.updateName("OnePlus");
+
+let ref = product.updateName; 
+
+ref("Oppo");
+product doesn't update name, because context is lost
+
+Solution:
+let ref2 = product.updateName.bind(product); // this means product
+ref2("Oppo");
+```
+
+VDOM --> Virtual DOM
+Any changes done to state, it updates VDOM by taking a copy of VDOM,
+then it computes diff algorithm between VDOM and VDOM copy.
+it updates the actual DOM
+
+https://legacy.reactjs.org/docs/reconciliation.html
+Reconcillation: 
+whenever state changes, react uses VDOM for updating the UI DOM
+
