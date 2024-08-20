@@ -6,7 +6,9 @@ export default class FriendRow extends Component {
         let {id, firstName, lastName} = this.props.person;
         return <div className="row">
                {firstName} &nbsp; {lastName} &nbsp;
-               <button type="button">Delete</button>
+               <button type="button" onClick={() => this.props.delEvent(id)}>Delete</button>
         </div>
     }
 }
+
+

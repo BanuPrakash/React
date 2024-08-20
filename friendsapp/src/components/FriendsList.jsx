@@ -8,12 +8,21 @@ export default class FriendsList extends Component {
         friends: friends
     }
 
+    deleteFriend(id) {
+        let frnds = this.state.friends.filter(f => f.id !== id);
+        this.setState({
+            friends: frnds
+        })
+    }
+
     // override to return JSX
     render() {
         return <div>
             <Filter />
             {
-                this.state.friends.map(friend => <FriendRow person={friend} />)
+                this.state.friends.map(friend => <FriendRow 
+                    person={friend} 
+                    delEvent={(id) => this.deleteFriend(id)}/>)
             }
         </div>
 
