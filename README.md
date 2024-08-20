@@ -292,9 +292,39 @@ syntax transforms Example:
 ```
 A polyfill is a piece of code (usually JavaScript on the Web) used to provide modern functionality on older browsers that do not natively support it.
 
+```
 Promise.resolve("done"); 
 
 converts into 
 import 'core-js/actual/Promise';
 
 Promise.resolve("done"); 
+
+```
+
+==========
+
+all dependencies are installed into "node_modules" folder
+
+ "dev": "webpack --mode development"
+
+ npm run dev
+
+ ```
+ 
+asset bundle.js 4.5 KiB [emitted] (name: main)
+runtime modules 670 bytes 3 modules
+cacheable modules 331 bytes
+  ./src/index.js 186 bytes [built] [code generated]
+  ./src/lib.js 145 bytes [built] [code generated]
+webpack 5.93.0 compiled successfully in 232 ms
+``
+
+npm run prod
+
+```
+asset bundle.js 120 bytes [emitted] [minimized] (name: main)
+orphan modules 145 bytes [orphan] 1 module
+./src/index.js + 1 modules 331 bytes [built] [code generated]
+
+```
