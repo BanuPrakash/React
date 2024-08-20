@@ -1,0 +1,228 @@
+{
+    "cast": [
+        {
+            "id": 1,
+            "firstName": "Rachel",
+            "lastName": "Green"
+        },
+        {
+            "id": 2,
+            "firstName": "Ross",
+            "lastName": "Geller"
+        },
+        {
+            "id": 3,
+            "firstName": "Joey",
+            "lastName": "Tribbiani"
+        },
+        {
+            "id": 4,
+            "firstName": "Monica",
+            "lastName": "Geller"
+        },
+        {
+            "id": 5,
+            "firstName": "Phoebhe",
+            "lastName": "Buffay"
+        },
+        {
+            "id": 6,
+            "firstName": "Chandler",
+            "lastName": "Bing"
+        }
+    ],
+    "episodes": [
+        {
+            "title": "The One Where Monica Gets a Roommate (Pilot)",
+            "number": "1",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABYNxZy-KPW08N_V_2cnzjfvZS5IoQwEq8UlA1afJW0kqOp4J6I6L0uEQtPQlW147Vi9vE3u5jBGuU_CxWcXKrdFZGf-3AYUMuiiBOHVFMIQ0MuFi.webp?r=42d",
+            "plot": "Rachel runs from her wedding and meets the friends in the coffee place. Ross is depressed about his divorce but he still has a crush on Rachel.",
+            "link": "https://www.netflix.com/watch/70273997",
+            "season": "1"
+        },
+        {
+            "title": "The One with the Sonogram at the End",
+            "number": "2",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABa7FdcZmBtTko6yr2XCoDwojZjBLchwLh81m8w-L8eLxBKSDMV9Ln7kEC6OC9hNuVHn2A2DyfwvhhsYo7mnmY5pmxKlUWWil3gaPpbp-qiNX-Q21.webp?r=32a",
+            "plot": "Ross's lesbian ex-wife is pregnant with his child, and he doesn't like her choice of a last name for the baby.",
+            "link": "https://www.netflix.com/watch/70273998",
+            "season": "1"
+        },
+        {
+            "title": "The One with the Thumb",
+            "number": "3",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABWodW2IPQ-CTosi11AbOBehcPhYmfX6zF5IjudMCGXPkXNGDPbbfTE-WM_kD4WA8_4p5hc-GhRulY7Hi7OBrU4Dsex6VcI8xklVLQmUdy5vyLjUv.webp?r=5e4",
+            "plot": "A soda company gives Phoebe $7,000 after she finds a dismembered thumb in a can of soda.",
+            "link": "https://www.netflix.com/watch/70273999",
+            "season": "1"
+        },
+        {
+            "title": "The One with George Stephanopoulos",
+            "number": "4",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABcMOqhE0HU05uhn8CS_VvyV4r8GspAs8cAKYIuyKfz_H6fccnxLn1gvTPZtz4PKDqU8W9tuaJG9n6l22qnY8JUzDsA0aW_lDQdmWg2-NfiRN8lil.webp?r=d3a",
+            "plot": "A deliveryman accidentally brings a pizza meant for George Stephanopoulos, who lives across the street from the girls.",
+            "link": "https://www.netflix.com/watch/70274000",
+            "season": "1"
+        },
+        {
+            "title": "The One with the East German Laundry Detergent",
+            "number": "5",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABXdaA3iO3ztA_ZiTB7yemF99lIPyfV-NmrBbIS0JvQUYX8eBx1Q3CK6r-GmXnWOzfmWl9kzZ8jta-24BiDVshzxqg41ZZAMdHJ4T3macevyqS3Vi.webp?r=e0d",
+            "plot": "Ross helps Rachel do laundry and considers the evening a first date. Joey has Monica pose as his new girlfriend.",
+            "link": "https://www.netflix.com/watch/70274001",
+            "season": "1"
+        },
+        {
+            "title": "The One with the Butt",
+            "number": "6",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABYOVeQkvyleGY1UbJj2vrcz4W77cvZfBlmWZRP6V6lMflVGrEPxcsr4mrozWy0PAv6afuR5jYGXefyYQM8Jfz74O486Aw4JnCoIDXeis0ku6NxhK.webp?r=ae7",
+            "plot": "Joey gets his big film break when he's hired to be Al Pacino's stunt butt.",
+            "link": "https://www.netflix.com/watch/70274002",
+            "season": "1"
+        },
+        {
+            "title": "The One with the Blackout",
+            "number": "7",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABRiUEKkPNCfkNzRt6wkZX4ncz0wszyibrLEWIIbg56iEX7KEnplRTandQe9rcgfwkcBBLznS8g_0cJG8d1IJefwkhOaisri39F_ilCfxYhc4mtPL.webp?r=9b3",
+            "plot": "During a citywide blackout, Ross tries to tell Rachel that he likes her.",
+            "link": "https://www.netflix.com/watch/70274003",
+            "season": "1"
+        },
+        {
+            "title": "The One Where Nana Dies Twice",
+            "number": "8",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABeKz3kpr3yDUyHcL2SF2Ajt58M_DVTQLjInpvBxDMWIVjnWfpaSxlZGV-sD2kqsC5fQ_AMZBiV3lCAztlxHDPt6icy7nCtRbyKbrMrCcee0EvZ_U.webp?r=d05",
+            "plot": "Monica and Ross mourn the death of their grandmother. Chandler questions his sexuality.",
+            "link": "https://www.netflix.com/watch/70274004",
+            "season": "1"
+        },
+        {
+            "title": "The One Where Underdog Gets Away",
+            "number": "9",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABSJmGY_hXcY7lwEY_Jd_DX92jFYqPFcXJc1FBUiPeWc2F9YW0BcFUgCdksKKGnqyDI6btNhDvtH7M6OGGUcLsFUOPBiuqKlTCMxaPCf-NrD2TtvW.webp?r=136",
+            "plot": "Monica's first Thanksgiving dinner for the gang burns when they all run to the rooftop to see the runaway Underdog balloon from the parade.",
+            "link": "https://www.netflix.com/watch/70274005",
+            "season": "1"
+        },
+        {
+            "title": "The One with the Monkey",
+            "number": "10",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABWTwftSxHNkU5T7_VkvOUtmds1eyURJXEnxqgWzNbzP8LtTZxX0HE7dmVbRrEyZZzV_K_ykj3ZhNUbpXfDFdSB0fYpMrSAS3CpN6q6hdr7ctvN6x.webp?r=b07",
+            "plot": "The gang makes and then breaks a pact to celebrate New Year's Eve without dates. Lonely Ross gets a roommate: a monkey named Marcel.",
+            "link": "https://www.netflix.com/watch/70274006",
+            "season": "1"
+        },
+        {
+            "title": "The One with Mrs. Bing",
+            "number": "11",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABfaOu1zwMSyou0kCC5fyxMomGemLPEuh9wawTbCxOndlZQx7dj5GOdqffTKKlLk75DjZznbNs6JX9yn28UFxKSDN6Bc1qd_mJIIXVQkk_agibfVD.webp?r=4c9",
+            "plot": "When Chandler's romance novelist mother comes to New York to visit him, Joey catches her and Ross kissing.",
+            "link": "https://www.netflix.com/watch/70274007",
+            "season": "1"
+        },
+        {
+            "title": "The One with the Dozen Lasagnas",
+            "number": "12",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABQcPalvvwJjK6XwjiRhAc4gGo9ckpA_RmrrWE5RjkRM1vPNmDAt22-W45_7teobI_MBlSGcMHZnSSwsILz-3gi7CmIRkIcCcaJ6eq3gvnOX-2L3N.webp?r=576",
+            "plot": "Monica gives Paolo one of the dozen lasagnas she made for her aunt, who doesn't want them anymore because they've got meat in them.",
+            "link": "https://www.netflix.com/watch/70274008",
+            "season": "1"
+        },
+        {
+            "title": "The One with the Boobies",
+            "number": "13",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABU3Z2pWUlr6jy22B3kssqU2SvDQQ5IWNNCoyKxjoo8_IYIjEUgElLUQTy7w9jPeoYNhEMNbqNIaR9clHyT2GXDpeRIJouG8SiUhyOpJcSvnVX4vN.webp?r=cbd",
+            "plot": "Chandler accidentally sees Rachel wandering around topless after her shower, so Rachel tries to even the score.",
+            "link": "https://www.netflix.com/watch/70274009",
+            "season": "1"
+        },
+        {
+            "title": "The One with the Candy Hearts",
+            "number": "14",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABazTrGvIRjVPfPs9U0ccH0jMwMrXJ5MbHpKLArq1-Ja8gG-lhcR3hYlTLLaII5Jlih_FBDfNFnQ8iVRc3uc4FuPGA8QC10pjIAeaWvF16xMh_odz.webp?r=880",
+            "plot": "Joey fixes up Chandler and Janice, and Ross runs into Carol and Susan on a Valentine's Day date.",
+            "link": "https://www.netflix.com/watch/70274010",
+            "season": "1"
+        },
+        {
+            "title": "The One with the Stoned Guy",
+            "number": "15",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABd635p3kMPkkWyZkQr4Nzqk4I9zHwdpwor5ydNdOv-QoJku2PhNzU8UxOVJV6RY3L1EIHH9OABWvojndvy5LtIK4mbORJAxgqvu1UTR8APUdfN09.webp?r=a79",
+            "plot": "Monica cooks a gourmet meal for a restaurateur looking for a new chef, but unfortunately, he's stoned.",
+            "link": "https://www.netflix.com/watch/70274011",
+            "season": "1"
+        },
+        {
+            "title": "The One with the Two Parts: Part 1",
+            "number": "16",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABZ6sr2MbkKvPHLtmbaxWI-wVybnLDfCgAJbs14vRS89Ao3rne8rs1CdA_UUBzEcgI8uCquB6kTIDHI5Gd2iZ_0QXDsjTA8YcFuFUMe_y3KnC7MMR.webp?r=acb",
+            "plot": "Joey falls for Phoebe's twin sister, making Phoebe feel neglected. Ross attends Lamaze classes with Carol and Susan.",
+            "link": "https://www.netflix.com/watch/70274012",
+            "season": "1"
+        },
+        {
+            "title": "The One with the Two Parts: Part 2",
+            "number": "17",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABWz4r-NGStzJhDDktzfS_zOsCMp0YlpEpD6QxL19GmYhkIwTR02ZEOSvqCe8w1hNxld2_M7H3XMAgzSzjXuJy6uSXVqdO4CmEEAwuby_yTIY5tOr.webp?r=641",
+            "plot": "When Rachel sprains her ankle and has no insurance, she talks Monica into trading identities so she can use Monica's coverage.",
+            "link": "https://www.netflix.com/watch/70274013",
+            "season": "1"
+        },
+        {
+            "title": "The One with All the Poker",
+            "number": "18",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABS3WexZNdwpjO8H4TjWT4qs9pp14ZoSQM3maLYLOetJLRLfRuvpJtkpJtEABeyVA92hy9GP8dVMhKp55ohOwSq0WCAewTFJPkd52gHUkE2lJYE_f.webp?r=51f",
+            "plot": "Rachel interviews for a job as an assistant buyer at Saks Fifth Avenue. The women face the men in a not-so-friendly game of poker.",
+            "link": "https://www.netflix.com/watch/70274014",
+            "season": "1"
+        },
+        {
+            "title": "The One Where the Monkey Gets Away",
+            "number": "19",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABRcrWkCNW0ZkQv8Es4-snVQHxgbklUl9oTmppWUymngN_f6s3_e5j5rjf0w1pwBQha53trznjpMQAjOVbm6lPdRX_o-J_m8jnWz8ijMP7aO3mndl.webp?r=b4f",
+            "plot": "The gang searches for Marcel, who slipped out of the apartment while Rachel was caring for him.",
+            "link": "https://www.netflix.com/watch/70274015",
+            "season": "1"
+        },
+        {
+            "title": "The One with the Evil Orthodontist",
+            "number": "20",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABSUNWE8Yab8Bl3UyOOrLkhaDFFpWwlhjg2jySTT31iRw75AyDyQ69eX61NTMVyn7OQVueVwNQg4Y0BEjwoXkVXaKpq7ryyZLkkdYA5ek63VeZgVG.webp?r=901",
+            "plot": "Rachel and Barry start dating again, even though he's engaged to Mindy, who wants Rachel to be her maid of honor.",
+            "link": "https://www.netflix.com/watch/70274016",
+            "season": "1"
+        },
+        {
+            "title": "The One with the Fake Monica",
+            "number": "21",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABSQLhnHOAyEXZ5p2924LnmgPkz0Muj3RbestjXShODYbOXbK65TevDq0TN62wWrazGPM3Ongisl9c2yXUlCr3Os8ICy2Z1eFs-8uKmGWr9bHPMzW.webp?r=309",
+            "plot": "When Monica's credit card is stolen, she decides to catch the thief.",
+            "link": "https://www.netflix.com/watch/70274017",
+            "season": "1"
+        },
+        {
+            "title": "The One with the Ick Factor",
+            "number": "22",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABRYU0FxaCymYOP4z_88khhSmHU0XPx59NPQ2zdVXBr_UnZRFvJBKULl4seKLfIe3AraDiUFXTgvVdcSKI_vQiYw_dJVI6QPbzmqDCSkSFPE0fUZW.webp?r=606",
+            "plot": "After losing his virginity to her, Monica's boyfriend reveals that he's a high school senior. Phoebe temps as Chandler's secretary.",
+            "link": "https://www.netflix.com/watch/70274018",
+            "season": "1"
+        },
+        {
+            "title": "The One with the Birth",
+            "number": "23",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABWv_zCrBmHozB03zWqi7aJls4VxENdTwbdTMTBnYj8XkYuGvFo1JLH4ZWR2UIDFjg_QDjYSGuJpz-ng4Ja1x9-XTuXfRS4zRs7OSdaylR6WI-zDC.webp?r=8ab",
+            "plot": "Carol goes into labor while Ross, Phoebe and Susan get locked in a closet.",
+            "link": "https://www.netflix.com/watch/70274019",
+            "season": "1"
+        },
+        {
+            "title": "The One Where Rachel Finds Out",
+            "number": "24",
+            "image": "https://occ-0-784-778.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABcs9oJdFSsI8fx0iynxWbgnEMkek_gaBGEkrT0_KB9ooCdr7FukMFD0qjlCEd4QM_XyRjr9BzTtGqDquXiFaOyN3yFZm-Bn9fGfp5UOpibvhbNeS.webp?r=10d",
+            "plot": "During Rachel's birthday party, Chandler accidentally lets it slip that Ross is in love with her.",
+            "link": "https://www.netflix.com/watch/70274020",
+            "season": "1"
+        }
+    ]
+}
