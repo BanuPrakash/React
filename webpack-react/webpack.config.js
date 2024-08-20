@@ -10,6 +10,7 @@ module.exports = function (__env, argv) {
             filename: "bundle.[contenthash:8].js"
         },
         target: ['web', 'es5'],
+        devtool: 'cheap-module-source-map',
         module: {
             rules: [
                 {
@@ -18,7 +19,7 @@ module.exports = function (__env, argv) {
                     use: "babel-loader"
                 },
                 {
-                    test :/\.css$/,
+                    test: /\.css$/,
                     use: ["style-loader", "css-loader"]
                 }
             ]
@@ -30,7 +31,7 @@ module.exports = function (__env, argv) {
             extensions: [".tsx", ".ts", ".jsx", ".js"]
         },
         plugins: [new HtmlWebpackPlugin({
-            template: path.resolve(__dirname) +"/public/index.html"
+            template: path.resolve(__dirname) + "/public/index.html"
         })],
     }
 }
