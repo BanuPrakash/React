@@ -368,3 +368,13 @@ create-react-app creates a scaffolding code, Under the hood, we use webpack, Bab
 
 npx create-react-app friendsapp
 
+==========
+
+React elements can be created using:
+1) React.createElement()
+2) functional component ==> returns JSX
+3) Class Component -> state and behaviour
+render() returns JSX
+
+=====
+
