@@ -344,3 +344,13 @@ webpack-react> npm install
 npm i css-loader style-loader 
 
 Source mapping
+
+=================
+@babel/preset-env --> Syntax transform and pollyfill to make code compatable with lower version of JavaScript provided by browsers
+
+npm i @babel/preset-react
+
+@babel/preset-react --> to handle JSX [JavaScript and XML]
+
+
+JSX => @babel/preset-react ==> looks out for an Object "React" and method "createElement"
