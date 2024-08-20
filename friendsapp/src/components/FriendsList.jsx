@@ -7,7 +7,10 @@ export default class FriendsList extends Component {
     state = {
         friends: friends
     }
-
+    constructor(props) {
+        super(props);
+        this.deleteFriend = this.deleteFriend.bind(this);
+    }
     deleteFriend(id) {
         let frnds = this.state.friends.filter(f => f.id !== id);
         this.setState({
@@ -20,9 +23,9 @@ export default class FriendsList extends Component {
         return <div>
             <Filter />
             {
-                this.state.friends.map(friend => <FriendRow 
-                    person={friend} 
-                    delEvent={(id) => this.deleteFriend(id)}/>)
+                this.state.friends.map(friend => <FriendRow
+                    person={friend}
+                    delEvent={this.deleteFriend} />)
             }
         </div>
 

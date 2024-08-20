@@ -377,4 +377,5 @@ React elements can be created using:
 render() returns JSX
 
 =====
+delEvent={(id) => this.deleteFriend(id)}/>
 
