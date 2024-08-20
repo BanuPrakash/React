@@ -338,3 +338,7 @@ webpack-react> npm install
   Browser caches the files
 
    "start": "webpack serve --mode development",
+
+=====
+
+npm i css-loader style-loader 

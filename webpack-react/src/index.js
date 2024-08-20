@@ -1,6 +1,7 @@
 import add, {subtract, multiply} from './lib'
+import './styles.css'
 
-let a = 10;
+let a = 40;
 let b = 15;
 console.log("Hello !!!");
 

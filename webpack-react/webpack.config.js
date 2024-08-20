@@ -16,8 +16,18 @@ module.exports = function (__env, argv) {
                     test: /\.jsx?$/,
                     exclude: /node_modules/,
                     use: "babel-loader"
+                },
+                {
+                    test :/\.css$/,
+                    use: ["style-loader", "css-loader"]
                 }
             ]
+        },
+        devServer: {
+            port: 1234
+        },
+        resolve: {
+            extensions: [".tsx", ".ts", ".jsx", ".js"]
         },
         plugins: [new HtmlWebpackPlugin({
             template: path.resolve(__dirname) +"/public/index.html"
