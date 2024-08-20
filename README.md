@@ -201,3 +201,100 @@ tsc
 3) Linting --> Static Code analysis
 4) Minify / Uglify and Bundle the code
 
+=============================
+
+Build tools:
+* Grunt
+* Gulp
+* Webpack
+* vite
+
+Grunt is a JavaScript task runner, a tool used to automatically perform frequent tasks such as minification, compilation, unit testing, and linting.
+
+
+============================================
+
+1) Initialize a Node Project
+npm init --y
+
+this creates package.json file; file where all scrips, dependencies , development dependencies are configured
+
+
+2) Install development depenedencies
+
+npm i webpack webpack-cli babel-loader @babel/core @babel/preset-env html-webpack-plugin webpack-dev-server
+
+* babel-loader loads the imported file using ESM ==> ES 6 Module System
+Product.js
+.....
+
+other.js
+import Product from './Product'
+
+nodeJS by default understands CommonJS module System:
+```
+    lib.js
+    function add() {
+
+    }
+
+    funciton sub() {
+
+    }
+i
+    // private
+    function doTask() {
+
+    }
+    module.exports = {
+        add, sub
+    }
+
+    Other.js
+    let {add, sub} = require('./lib');
+```
+
+ESM:
+```
+lib.js
+    export function add() {
+
+    }
+
+    export funciton sub() {
+
+    }
+i
+    // private
+    function doTask() {
+
+    }
+
+Other.js
+
+import {add, sub} from './lib'
+```
+
+@babel/core ==> babel-transpiller ==> transcompiler
+to convert latest JS into older version
+
+@babel/preset-env ==> @babel/preset-env is a smart preset that allows you to use the latest JavaScript without needing to micromanage which syntax transforms (and optionally, browser polyfills) 
+
+syntax transforms Example:
+```
+    let add = (x,y) => x + y;
+
+    transformed into:
+
+    function add(x,y) {
+        return x + y;
+    }
+```
+A polyfill is a piece of code (usually JavaScript on the Web) used to provide modern functionality on older browsers that do not natively support it.
+
+Promise.resolve("done"); 
+
+converts into 
+import 'core-js/actual/Promise';
+
+Promise.resolve("done"); 
