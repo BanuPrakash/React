@@ -328,3 +328,13 @@ orphan modules 145 bytes [orphan] 1 module
 ./src/index.js + 1 modules 331 bytes [built] [code generated]
 
 ```
+
+webpack-react> npm install
+
+
+  The HtmlWebpackPlugin simplifies creation of HTML files to serve your webpack bundles. This is especially useful for webpack bundles that include a hash in the filename which changes every compilation. 
+
+  Why hashing in bundle file?
+  Browser caches the files
+
+   "start": "webpack serve --mode development",

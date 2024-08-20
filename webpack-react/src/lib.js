@@ -7,3 +7,7 @@ export function subtract(x, y) {
 }
 
 export const multiply = (x, y) => x * y;
+
+function doTask() {
+    
+}
