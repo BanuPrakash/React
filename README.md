@@ -359,3 +359,12 @@ JSX => @babel/preset-react ==> looks out for an Object "React" and method "creat
 https://github.com/chentsulin/awesome-react-renderer
 
 npm i bootstrap
+
+==========================
+
+react and react-dom librarires and using create-react-app tool
+
+create-react-app creates a scaffolding code, Under the hood, we use webpack, Babel, ESLint, and other amazing projects to power your app
+
+npx create-react-app friendsapp
+
