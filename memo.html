@@ -8,7 +8,15 @@
 </head>
 
 <body>
+
+    <button type="button" id="btn">Click</button>
     <script>
+        function doTask() {
+            console.log("task!!")
+        }
+
+        document.getElementById("btn").addEventListener("click", doTask); // correct
+        document.getElementById("btn").addEventListener("click", doTask());// get called when line is executed
         function memo(fn) {
             var cache = {};
             return function (args) {

@@ -4,7 +4,6 @@ export default function Counter() {
     let [count, setCount] = useState(0); // to introduce state variable in functional components
     let [name, setName] = useState("Roger");
 
-
     return <div>
         Name: {name} <br />
         Count : {count} <br />
