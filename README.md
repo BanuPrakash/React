@@ -685,3 +685,60 @@ let MemoAge = React.memo(AgeComponent);
 ReactDOM.render(<ParentComponent />, document.getElementById("root"));
 ```
 
+==============================
+Currently we are in React 18 version
+
+React Context: to avoid props drill was introduced in React 16.8 version
+Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+
+https://codepen.io/banuprakash/pen/YzoaZRb?editors=1010
+
+```
+let UserContext = React.createContext(); // central placholder for storing data --> Heap
+class ParentComponent extends React.Component {
+  state = {
+    name: 'Roger',
+    age: 18
+  }
+  
+  updateAge() {
+    this.setState({
+      age: this.state.age + 1
+    })
+  }
+  
+  render() {
+    return <div>
+      <UserContext.Provider value={{name: this.state.name, age: this.state.age}}>
+          <First/>
+          <button type="button" onClick={() => this.updateAge()}>Change Age </button>
+      </UserContext.Provider>
+     </div>
+  }
+}
+
+
+function First() {
+  return <Second />
+}
+
+function Second() {
+  return <Third />
+}
+
+function Third() {
+  return <UserContext.Consumer>
+      {
+      value => {
+        return <div>
+            Name: {value.name} <br />
+            Age : {value.age}
+          </div>
+      }
+    }
+    </UserContext.Consumer>
+}
+
+ReactDOM.render(<ParentComponent />, document.getElementById("root"));
+
+```
