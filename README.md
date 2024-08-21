@@ -841,3 +841,46 @@ Reducer functions --> (state, action) => return state
 Counter with INCREMENT, DECREMENT, RESET options
 
 ==============
+
+SOLID Design Princple
+
+S --> Single Responsibility 
+
+Cyclomatic Complexity
+
+==================================================
+
+Single Page Application --> Shopping Application
+* Context
+* Hooks
+* react-router-dom
+* bootstrap
+* react-bootstrap
+* font-awesome
+
+react-router-dom: different URLs will display different components
+```
+http://localhost:3000/products --> <ProductList />
+http://localhost:3000/cart --> <CartComponent />
+http://localhost:3000/details/3 --> <Details />
+http://localhost:3000/new_product --> <ProductForm />
+http://localhost:3000/dsfds --> <Default />
+
+```
+1) NavbarComponent
+2) ProductList
+3) ProductCard
+4) CartComponent
+5) CartList
+6) ProductForm
+7) Default
+8) Details
+
+
+steps:
+1) npx create-react-app shopapp
+2) Add Extenstion
+ES7+ React/Redux/React-Native snippets --> dsznajder
+3) 
+shopapp> npm i bootstrap react-bootstrap react-router-dom @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons 
+
