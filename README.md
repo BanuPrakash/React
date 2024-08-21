@@ -884,3 +884,10 @@ ES7+ React/Redux/React-Native snippets --> dsznajder
 3) 
 shopapp> npm i bootstrap react-bootstrap react-router-dom @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons 
 
+Server Side routing
+https://jsonplaceholder.typicode.com/users
+https://jsonplaceholder.typicode.com/posts
+https://jsonplaceholder.typicode.com/comments
+
+Client Side Routing
+Different URL --> DifferentComponent is rendered 
