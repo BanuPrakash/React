@@ -510,3 +510,31 @@ For Unit testing: dependencies has to be mocked
 person and delEvent are dependecies; we need to mock them
 
 ```
+
+Component Life Cycle methods of React:
+
+Mounting:
+constructor() -> render() -> componentDidMount()
+Initialize data --> render() --> Make API call to server, update state --> leads to Phase 2 --> Updating Phase
+
+Never make API calls in constructor() --> Leads to FCP web vitals
+First Contentful Paint
+
+Updating Phase: whenever state or props from parent changes
+
+shouldComponentUpdate() --> true --> render() --> componentDidUpdate()
+any dependent API call should be done in componentDidUpdate()
+
+shouldComponentUpdate() --> false --> render() is not called 
+
+Unmounting Phase: when component is getting destroyed --> componentWillUnmount();
+any subscriptions we need to unsubscribe 
+Example: components gets notification from Firebase, 
+Display Dialog box before deleting component
+
+=====
+Importance of shouldComponentUpdate() after the break
+
+Reseume @ 11:20
+
+
