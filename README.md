@@ -888,6 +888,34 @@ Server Side routing
 https://jsonplaceholder.typicode.com/users
 https://jsonplaceholder.typicode.com/posts
 https://jsonplaceholder.typicode.com/comments
+use  href="/users"
 
 Client Side Routing
 Different URL --> DifferentComponent is rendered 
+use Link
+
+=======
+
+Thinking in React:
+
+Atoms --> Molecules --> Organisms --> Templates --> Pages
+
+Atoms:
+Basic buidling blocks of matter, such as Button, input, label, image. These are not useful on their own
+
+Molecules:
+Grouping atoms together: Example --> Card, Navbar, Panel
+
+Organisms:
+Combining molecules together: --> List of Cards...
+
+=============
+
+99% of the time we don't build atoms, we pick it from different resusable component providers like:
+1) react-bootstrap
+2) Adobe web components
+3) MUI
+4) PrimeReact
+5) KendoUI
+
+45 -50% of time molecules are available
