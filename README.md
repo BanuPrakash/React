@@ -772,3 +772,72 @@ useEffect(() => {
 }, [name])
 
 ```
+
+3) useContext --> hook to simply Context Consumer
+Old Code:
+```
+
+function Third() {
+  return <UserContext.Consumer>
+      {
+      value => {
+        return <div>
+            Name: {value.name} <br />
+            Age : {value.age}
+          </div>
+      }
+    }
+    </UserContext.Consumer>
+}
+```
+New Code:
+```
+function Third() {
+  let {name, age} = React.useContext(UserContext);
+       return <div>
+            Name: {name} <br />
+            Age : {age}
+          </div>
+}
+```
+
+4) useReducer() is a hook which should be used instead of useState() if
+a) state mutation depends on previous state
+b) conditionally mutate the state
+```
+State:
+{
+    cartItems: [...],
+    total: 2441
+    quantity: 2
+}
+
+Different Actions:
+ADD_TO_CART, newItem
+REMOVE_FROM_CART, id
+CLEAR_CART
+```
+
+Action object contains type and payload?:
+Example:
+```
+{
+    type: 'ADD_TO_CART',
+    payload: {id:1, name: 'A", price: 3434}
+}
+
+{
+    type: 'REMOVE_FROM_CART',
+    payload: 3
+}
+
+{
+    type: 'CLEAR_CART'
+}
+```
+
+Reducer functions --> (state, action) => return state
+
+Counter with INCREMENT, DECREMENT, RESET options
+
+==============

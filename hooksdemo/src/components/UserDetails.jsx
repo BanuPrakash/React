@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 export default function UserDetails({id}) {
-    let [user, setUser] = useState();
+    let [user, setUser] = useState(null);
 
     // componentDidUpdate
     useEffect(() => {

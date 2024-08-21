@@ -4,13 +4,14 @@ import Counter from './components/Counter';
 import Users from './components/Users';
 import UserDetails from './components/UserDetails';
 import { useState } from 'react';
+import ReducerComponent from './components/ReducerComponent';
 
 function App() {
-  let [id, setId] = useState(0);
+  let [id, setId] = useState(1);
   return (
     <div className="App">
       {/* <Counter /> */}
-      <div className='container'>
+      {/* <div className='container'>
         <div className='row'>
           <div className='col-md-4'>
             <Users setUserId={setId}/>
@@ -19,7 +20,8 @@ function App() {
             <UserDetails id={id}/>
           </div>
         </div>
-      </div>
+      </div> */}
+      <ReducerComponent/>
     </div>
   );
 }
