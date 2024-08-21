@@ -486,6 +486,7 @@ getByLabelText
 getByPlaceholderText
 getByText
 
+```
  <h1>Friends Application</h1>
  let h1Eleme = screen.getByText(/Friends Application/);
 
@@ -498,7 +499,7 @@ npm test -- --coverage --watchAll
 
 ----
 
-For Unit testing: dependecies has to be mocked
+For Unit testing: dependencies has to be mocked
 
 ```
 <FriendRow
