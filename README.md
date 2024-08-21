@@ -411,3 +411,101 @@ https://legacy.reactjs.org/docs/reconciliation.html
 Reconcillation: 
 whenever state changes, react uses VDOM for updating the UI DOM
 
+============
+
+Life cycle methods, how to avoid re-rendering of components,
+functional components and hooks
+
+=======================================================
+
+Recap of Day 1:
+* Why nodejs?
+* use of build tools like webpack
+* babel --> transcompiler or transpiler [Higher version of JS to lower version JS]
+* @babel/preset-env: syntax transforms and polyfills
+* @babel/preset-react: to handle JSX [ convert JSX to JS object]
+* React.createElement() and render() methods
+* create-react-app: to create a scaffolding /boilerplate code  for react applications, built on top of webpack
+--> public/index.html
+--> src/index.js
+--> src/App.js
+--> src/App.css
+
+* Different ways we create react elements
+1) React.createElement()
+2) functional components: return JSX
+3) class component: can have state and behaviour
+render() returns JSX
+4) event handling
+onXXX() like onClick(), onChange(), onMouseOver(), ....
+
+================================================================
+
+Task: Recipe application
+
+========================================
+
+Day 2:
+
+Developer 1 develops FriendRow.jsx
+Developer 2 develops FriendList.jsx
+
+Assume delete doesn't work.
+
+Testing is a must
+* Unit testing
+* Integration testing
+* E2E testing
+
+
+Unit testing in JS, different libraries are available:
+1) Jasmine << preffered by Angular developers>>
+2) Mocha << generally for Server side applications>>
+3) Jest <<prefered by React>>
+
+RTL: React testing library provided for Unit testing is built on top of JEST
+
+Testing is all about AAA: Assemble Action Assert
+Unit test files are of pattern *.test.js
+
+```
+RTL Types of Queries:
+for Single element fetching
+* getBy...
+* queryBy...
+* findBy...
+
+for Collection:
+* getAllBy...
+* queryAllBy...
+* findAllBy...
+
+
+getByRole
+getByLabelText
+getByPlaceholderText
+getByText
+
+ <h1>Friends Application</h1>
+ let h1Eleme = screen.getByText(/Friends Application/);
+
+<input type="text" placeholder="search by name" onChange={evt => props.filterEvt(evt.target.value)}/>
+screen.getByPlaceholderText('search by name');
+```
+
+Code Coverage: How much of your code has been tested --> configured in package.json
+npm test -- --coverage --watchAll
+
+----
+
+For Unit testing: dependecies has to be mocked
+
+```
+<FriendRow
+                    key={friend.id}
+                    person={friend}
+                    delEvent={this.deleteFriend} />
+
+person and delEvent are dependecies; we need to mock them
+
+```
