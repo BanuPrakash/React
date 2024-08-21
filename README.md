@@ -600,6 +600,7 @@ ReactDOM.render(<ParentComponent />, document.getElementById("root"));
 ```    
 
 Solution: shouldComponentUpdate() life cycle method
+https://codepen.io/banuprakash/pen/JjQymvM?editors=1011
 ```
 class AgeComponent extends React.Component {
   shouldComponentUpdate(prevProps,prevState) {
@@ -617,6 +618,7 @@ class AgeComponent extends React.Component {
 }
 
 class NameComponent extends React.Component {
+  
   shouldComponentUpdate(prevProps,prevState) {
     if(prevProps.name === this.props.name) {
       return false;
@@ -630,4 +632,55 @@ class NameComponent extends React.Component {
       </div>
   }
 }
+```
+
+For Functional components to avoid re-rendering use Memoization pattern
+
+```
+class ParentComponent extends React.Component {
+  state = {
+    name: 'Roger',
+    age: 18
+  }
+  
+  updateAge() {
+    this.setState({
+      age: this.state.age + 1
+    })
+  }
+  
+  updateName() {
+    this.setState( {
+      name: this.state.name +"**"
+    })
+  }
+  
+  render() {
+    console.log("Parent renders...")
+    return <div>
+        <MemoName name={this.state.name} /> <br />
+        <MemoAge age={this.state.age} /> <br />
+      <button type="button" onClick={() => this.updateAge()}>Change Age </button>
+      <button type="button" onClick={() => this.updateName()}>Change Name </button>
+     </div>
+  }
+}
+
+function AgeComponent(props) {
+  console.log("AgeComponent renders");
+  return <div>
+      Age: {props.age}
+    </div>
+}
+
+function NameComponent(props) {
+  console.log("NameComponent renders");
+  return <div>
+      Age: {props.name}
+    </div>
+}
+
+let MemoName = React.memo(NameComponent);
+let MemoAge = React.memo(AgeComponent);
+ReactDOM.render(<ParentComponent />, document.getElementById("root"));
 ```
