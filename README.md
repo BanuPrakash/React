@@ -919,3 +919,11 @@ Combining molecules together: --> List of Cards...
 5) KendoUI
 
 45 -50% of time molecules are available
+
+===
+
+A single bundle.js file is created which contains all the components [generally it will be 50+ components in an medium sized application]
+
+A Network call goes to server to download bundle.js; until bundle.js is not downloaded --> Blank Screen ---> FCP --> First Contentful Paint Web Vitals isses [ should be less than 1.8 sec]
+
+Solution: Lazy load components which are not required initially; only required things load eagerly
