@@ -599,3 +599,35 @@ class NameComponent extends React.Component {
 ReactDOM.render(<ParentComponent />, document.getElementById("root"));
 ```    
 
+Solution: shouldComponentUpdate() life cycle method
+```
+class AgeComponent extends React.Component {
+  shouldComponentUpdate(prevProps,prevState) {
+    if(prevProps.age === this.props.age) {
+      return false;
+    }
+    return true;
+  }
+  render() {
+    console.log("AgeComponent renders");
+    return <div>
+        Age: {this.props.age}
+      </div>
+  }
+}
+
+class NameComponent extends React.Component {
+  shouldComponentUpdate(prevProps,prevState) {
+    if(prevProps.name === this.props.name) {
+      return false;
+    }
+    return true;
+  }
+  render() {
+    console.log("NameComponent renders");
+    return <div>
+        Age: {this.props.name}
+      </div>
+  }
+}
+```
