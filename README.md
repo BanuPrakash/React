@@ -742,3 +742,37 @@ function Third() {
 ReactDOM.render(<ParentComponent />, document.getElementById("root"));
 
 ```
+
+class Counter extends Component {
+    state = {
+        name : "Roger",
+        count: 0
+    }
+
+    updateCount() {
+        this.setState({
+            count: this.state.count + 1
+        })
+    }
+
+    render() {
+        return <div>
+            Name: {this.state.name} <br />
+            Count: {this.state.count} <br />
+            <button type="button" onClick={() => updateCount()}>Increment</button>
+        </div>
+    }
+}
+
+
+React Hooks:
+Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+
+Class Components: state and life cycle methods
+Drawback: extends Component --> inherited --> too many things are inherited, we may need only few base class features.
+That makes class components heavy
+
+npx create-react-app hooksdemo
+
+React Hooks:
+1) useState
