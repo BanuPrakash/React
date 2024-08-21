@@ -684,3 +684,4 @@ let MemoName = React.memo(NameComponent);
 let MemoAge = React.memo(AgeComponent);
 ReactDOM.render(<ParentComponent />, document.getElementById("root"));
 ```
+
