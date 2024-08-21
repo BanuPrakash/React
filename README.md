@@ -535,6 +535,67 @@ Display Dialog box before deleting component
 =====
 Importance of shouldComponentUpdate() after the break
 
-Reseume @ 11:20
 
+codepen.io
+
+Pen Settings:
+1) JS Preprocessor --> Babel
+JS libraries:
+https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js
+https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js
+
+2) Behaviour
+disable auto save and auto preview
+
+Child Components are unneccessarily re-rendered --> Issue
+```
+class ParentComponent extends React.Component {
+  state = {
+    name: 'Roger',
+    age: 18
+  }
+  
+  updateAge() {
+    this.setState({
+      age: this.state.age + 1
+    })
+  }
+  
+  updateName() {
+    this.setState( {
+      name: this.state.name +"**"
+    })
+  }
+  
+  render() {
+    console.log("Parent renders...")
+    return <div>
+        <NameComponent name={this.state.name} /> <br />
+        <AgeComponent age={this.state.age} /> <br />
+      <button type="button" onClick={() => this.updateAge()}>Change Age </button>
+      <button type="button" onClick={() => this.updateName()}>Change Name </button>
+     </div>
+  }
+}
+
+class AgeComponent extends React.Component {
+  render() {
+    console.log("AgeComponent renders");
+    return <div>
+        Age: {this.props.age}
+      </div>
+  }
+}
+
+class NameComponent extends React.Component {
+  render() {
+    console.log("NameComponent renders");
+    return <div>
+        Age: {this.props.name}
+      </div>
+  }
+}
+       
+ReactDOM.render(<ParentComponent />, document.getElementById("root"));
+```    
 
