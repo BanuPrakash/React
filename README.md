@@ -1014,3 +1014,65 @@ export default function ProductForm() {
 }
 
 ```
+Search Params:
+```
+http://server.com:8080?page=3&limit=10
+
+import { useSearchParams } from "react-router-dom";
+
+function App() {
+  let [searchParams, setSearchParams] = useSearchParams();
+
+  function getData() {
+    let page = searchParams("page");
+    let limit = serachParams("limit");
+
+  }
+}
+```
+
+React Hooks:
+1) useState()
+2) useEffect()
+3) useReducer()
+4) useContext()
+5) useParams()
+6) useSearchParams()
+7) useNavigate()
+8) custom hook useFetch()
+9) useRef()
+
+---------
+
+React 18 vs previous version of React
+
+Older versions of React used Stack architecture
+REact 18 uses Fiber Architecture and supports concurreny
+
+https://claudiopro.github.io/react-fiber-vs-stack-demo/
+
+let [count, setCount] = useState();
+<div>
+    <h1>
+        Count : {count}
+    </h1>
+    <span>
+        <button onClick={() => setCount(count + 1)}> + </button>
+    </span>
+</div>
+
+Fiber nodes
+
+Preempt
+
+High Priorirty task can execute
+
+node_modules/react-dom/cjs/react-dom.development.js
+
+performUnitOfWork: 26586
+beginWork: 21555
+completeWork: 22103
+commitRootImpl: 26730
+
+React 18: considers user events as high priority over DOM updates
+
