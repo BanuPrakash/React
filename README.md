@@ -1093,3 +1093,17 @@ React 18: considers user events as high priority over DOM updates
 
 React 18 : Automatic Batching
 
+======
+Performance:
+Step 1:
+Lazy load MyComponent
+
+useCallback ==> memoize a function reference
+
+useMemo() is used to memoize the return value of a function
+
+
+Redux: Predictable State Managenent
+
+
+
