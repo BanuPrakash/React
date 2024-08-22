@@ -948,3 +948,7 @@ Recap of Day 2:
 Day 3:
 useFetch() custom hooks
 
+Check the code,
+implement Remove item from Cart
+
+Resume @ 2:00
