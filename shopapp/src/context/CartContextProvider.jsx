@@ -1,5 +1,5 @@
 import { createContext, useReducer } from "react";
-import cartReducer from "../../../shopapp/src/reducers/cartReducer";
+import cartReducer from "../reducers/cartReducer";
 
 const CartContext = createContext(); // placeholder for cart data
 
