@@ -18,12 +18,9 @@ export default function ProductList() {
     return <h1>Loading products....</h1>
   } else {
     return <div className='row'>
-        {
-           data.map(product => <ProductCard product={product} key={product.id} />)
-        }
-    </div> 
-    
-   
+      {
+        data.map(product => <ProductCard product={product} key={product.id} />)
+      }
+    </div>
   }
-
 }
