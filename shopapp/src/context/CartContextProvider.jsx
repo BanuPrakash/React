@@ -15,4 +15,21 @@ const initialState = {
 
 export default function CartContextProvider(props) {
     let [state, dispatch] = useReducer(cartReducer, initialState);
+
+    function addToCart(item) {
+        dispatch({ type: 'ADD_TO_CART', payload: item });
+    }
+
+    function increment(id) {
+        dispatch({ type: 'INCREMENT', payload: id })
+    }
+
+    function removeFromCart(id) {
+        dispatch({ type: 'REMOVE_FROM_CART', payload: id })
+    }
+
+    function checkout() {
+        dispatch({ type: 'CLEAR_CART' })
+    }
+
 }
