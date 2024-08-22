@@ -962,3 +962,6 @@ data.json --> provides Endpoints, can perform CRUD operations
 shopapp> npx json-server --watch data.json --port 1234
 
 shopapp> npm i axios
+
+Link is for client side routing
+href is for server side routing
