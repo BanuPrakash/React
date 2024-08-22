@@ -32,4 +32,14 @@ export default function CartContextProvider(props) {
         dispatch({ type: 'CLEAR_CART' })
     }
 
+    return <CartContext.Provider value={{
+        ...state,
+        addToCart,
+        increment,
+        removeFromCart,
+        checkout
+    }}>
+        {props.children}
+    </CartContext.Provider>
+
 }

@@ -4,7 +4,7 @@ export default function cartReducer(state, action) {
             return {
                 cartItems: [...state.cartItems, action.payload],
                 total: state.total + action.payload.amount,
-                quantity: quantity + 1
+                quantity: state.quantity + 1
             }
         case 'INCREMENT':
             return state;
