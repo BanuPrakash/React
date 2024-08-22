@@ -951,4 +951,14 @@ useFetch() custom hooks
 Check the code,
 implement Remove item from Cart
 
-Resume @ 2:00
+checkout() --> place order << write order to server>>, clear cart, redirect to products page
+
+==========
+
+json-server : Fake RESTApis
+
+data.json --> provides Endpoints, can perform CRUD operations
+
+shopapp> npx json-server --watch data.json --port 1234
+
+shopapp> npm i axios
