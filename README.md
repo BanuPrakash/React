@@ -927,3 +927,22 @@ A single bundle.js file is created which contains all the components [generally 
 A Network call goes to server to download bundle.js; until bundle.js is not downloaded --> Blank Screen ---> FCP --> First Contentful Paint Web Vitals isses [ should be less than 1.8 sec]
 
 Solution: Lazy load components which are not required initially; only required things load eagerly
+
+=============================
+
+Recap of Day 2:
+* Context --> place holder for data to avoid props-drill; Provider places data into the context; Consumer can access data present in context; useContext() is a hook which can be used in functional components for Consumer
+* shouldComponentUpdate() can be used to avoid unneccesary re-rendering of components; for functional components use memo()
+* componentDidMount(): is called after first rendering; place where API calls should be made and not in constructor --> FCP
+* componentDidUpdate(): will be called whenever state or props changes; place where dependent API calls should be made
+* React Hooks: --> only for functional components; start with "use"
+1) useState() to add state members to functional components
+2) useReducer() also adds state to functional components; use it only in scenario where mutation depends on previous state, conditionally update the state
+3) useContext()
+4) useEffect(): for life cycle methods like componentDidMount(), componentDidUpdate(), componentWillUnmount()
+
+* react-router-dom: client side routing; lazy loading of bundles with Suspense.
+
+======================
+
+Day 3:

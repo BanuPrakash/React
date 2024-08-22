@@ -7,6 +7,7 @@ import NavbarComponent from './components/NavbarComponent'
 import { lazy, Suspense } from 'react';
 
 
+// below components are not part of "bundle.js"
 const CartComponent = lazy(() => import('./components/CartComponent'));
 const Details = lazy(() => import('./components/Details'));
 const ProductForm = lazy(() => import('./components/ProductForm'));
