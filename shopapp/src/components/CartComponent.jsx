@@ -6,27 +6,31 @@ import CartList from './CartList';
 
 export default function CartComponent() {
   let { cartItems, total, checkout } = useContext(CartContext);
-  return (
-    <div className='container'>
+  if (!cartItems || cartItems.length == 0) {
+    return <h1>Cart is Empty!!!</h1>
+  } else {
+    return (
+      <div className='container'>
         {
-          cartItems.map(item => <CartList product={item} key={item.id}/>)
+          cartItems.map(item => <CartList product={item} key={item.id} />)
         }
-      <div className='row'>
-        <div className='col-md-8'>
-          &nbsp;
+        <div className='row'>
+          <div className='col-md-8'>
+            &nbsp;
+          </div>
+          <div className='col-md-2'>
+            Total: {total}
+          </div>
         </div>
-        <div className='col-md-2'>
-          Total: {total}
+        <div className='row'>
+          <div className='col-md-8'>
+            &nbsp;
+          </div>
+          <div className='col-md-2'>
+            <Button onClick={() => checkout()}>Checkout</Button>
+          </div>
         </div>
       </div>
-      <div className='row'>
-        <div className='col-md-8'>
-          &nbsp;
-        </div>
-        <div className='col-md-2'>
-          <Button onClick={() => checkout()}>Checkout</Button>
-        </div>
-      </div>
-    </div>
-  )
+    )
+  }
 }

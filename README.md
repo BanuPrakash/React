@@ -965,3 +965,52 @@ shopapp> npm i axios
 
 Link is for client side routing
 href is for server side routing
+
+ProductCard.jsx and Details.jsx
+
+===========
+
+* Controlled Components
+In React, the Controlled Component pattern involves managing the DOM / component's state through React's state system
+Example:
+```
+export default function ProductForm() {
+    let [title, setTitle] = useState("");
+    let [price, setPrice] = useState(0);
+
+    function submit() {
+        ..
+    }
+  return (
+    <div>
+        Title : <input type="text" onChange={(evt) => setTitle(evt.target.value)} /> <br />
+        Price : <input type="number" onChange={evt => setPrice(evt.target.value) } /> <br />
+        <button type="button" onClick={submit}>Add Product </button>
+    </div>
+  )
+}
+
+```
+* Uncontrolled Components
+Uncontrolled Component pattern involves letting the DOM handle the component’s state.
+Example:
+```
+export default function ProductForm() {
+    let titleRef = useRef();
+    let priceRef = useRef();
+    function submit() {
+       let product = {
+        title: titleRef.current.value,
+        price: priceRef.current.value
+       }
+    }
+  return (
+    <div>
+        Title : <input type="text" ref={titleRef} /> <br />
+        Price : <input type="number"  ref={priceRef}/> <br />
+        <button type="button" onClick={submit}>Add Product </button>
+    </div>
+  )
+}
+
+```
