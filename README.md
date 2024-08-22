@@ -1069,10 +1069,27 @@ High Priorirty task can execute
 
 node_modules/react-dom/cjs/react-dom.development.js
 
+```
+function App() {
+ const [count, setCount] = useState(0);
+  return (
+   <div>
+      <h1> React 18 Example</h1>
+      <span>Count : {count}</span>
+      <button type="button" onClick={() => setCount(count+1)}>+</button>
+   </div>
+  );
+}
+
+export default App;
+
+```
 performUnitOfWork: 26586
 beginWork: 21555
 completeWork: 22103
 commitRootImpl: 26730
 
 React 18: considers user events as high priority over DOM updates
+
+React 18 : Automatic Batching
 
