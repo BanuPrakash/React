@@ -1258,3 +1258,34 @@ Convert "shopapp" to use RTK instead of Context
 
 shopapp-rtk % npx json-server --watch data.json --port 1234
 shopapp-rtk % npm start
+
+==========
+
+createStore() ===> configureStore()
+
+createSlice() ==> configure actions and reducers
+
+```
+const slice = createSlice({
+  name: 'test',
+  initialState: 0,
+  reducers: {
+    increment: (state, action) => state + action.payload,
+    decrement: (state) => state - 1,
+    reset: (state) => 0
+  }
+})
+
+actions
+
+slice.actions.increment(2)
+slice.actions.decrement()
+```
+
+No need for connect(mapStateToProps, mapDispatchToProps)(App);
+
+Hooks:
+useSelector() The selector is approximately equivalent to the mapStateToProps argument to connect conceptually.
+
+useDispatch() The selector is approximately equivalent to the mapDispatchToProps argument to connect conceptually.
+
