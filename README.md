@@ -1185,7 +1185,7 @@ https://immerjs.github.io/immer/
  npx create-react-app contactmanager
 
 contactmanager> npm i redux react-redux
-
+```
 state = {
   contacts: [],
   profile: {
@@ -1193,3 +1193,35 @@ state = {
       "user": "Banu Prakash"
   }
 }
+``
+
+Old Code:
+```
+
+function App(props) {
+  let [email, setEmail] = useState("");
+  let [name, setName] = useState("");
+  function submit() {
+    let contact = {
+      email,
+      name
+    }
+    props.addContact(contact);
+  }
+  return (
+    <div className="App">
+      <h1> Hello {props.profilepic} </h1>
+      <button type="button" onClick={props.clearContacts}>Clear Contacts</button>
+      <form>
+        Email <input type='email' onChange={evt => setEmail(evt.target.value)} /> <br />
+        Name <input type='text' onChange={evt => setName(evt.target.value)} /> <br />
+        <button type='button' onClick={submit}>Add Contact</button>
+      </form>
+      {
+        props.contactlist.map(contact => <ContactView
+          key={contact.email} contact={contact} delEvt={props.removeContact} />)
+      }
+    </div>
+  );
+}
+```

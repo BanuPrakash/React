@@ -3,23 +3,35 @@ import { connect } from 'react-redux';
 import ContactView from './ContactView';
 import { useState } from 'react';
 
+const initData = {
+  email: "",
+  name: ""
+}
+
 function App(props) {
-  let [email, setEmail] = useState("");
-  let [name, setName] = useState("");
+  let [formData, setFormData] = useState(initData);
+
+  function handleChangeEvent(evt) {
+    const { name, value } = evt.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    })
+  }
   function submit() {
-    let contact = {
-      email,
-      name
-    }
-    props.addContact(contact);
+    // let contact = {
+    //   email: formData["email"],
+    //   name: formData["name"]
+    // }
+    props.addContact(formData);
   }
   return (
     <div className="App">
       <h1> Hello {props.profilepic} </h1>
       <button type="button" onClick={props.clearContacts}>Clear Contacts</button>
       <form>
-        Email <input type='email' onChange={evt => setEmail(evt.target.value)} /> <br />
-        Name <input type='text' onChange={evt => setName(evt.target.value)} /> <br />
+        Email <input type='email' name="email" onChange={handleChangeEvent} /> <br />
+        Name <input type='text' name="name" onChange={handleChangeEvent} /> <br />
         <button type='button' onClick={submit}>Add Contact</button>
       </form>
       {
