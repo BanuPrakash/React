@@ -6,6 +6,7 @@ import { faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux'
 import {addToCart} from '../redux/cartSlice'
+
 export default function ProductCard({ product }) {
   let dispatch = useDispatch();
 

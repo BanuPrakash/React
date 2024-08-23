@@ -6,7 +6,7 @@ import useFetch from '../hooks/useFetch';
 export default function ProductList() {
   // let [products, setProducts] = useState();
   // let { status, data } = useFetch("https://fakestoreapi.com/products?limit=5");
-
+  console.log("ProductList renders")
   let { status, data } = useFetch("http://localhost:1234/products");
   
   // componentDidMount(); called only once after initial render

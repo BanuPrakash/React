@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import CartList from './CartList'
 import { clearCart } from '../redux/cartSlice'
 export default function CartComponent() {
+ 
   let dispatch = useDispatch();
   let { cartItems, total } = useSelector(state => state.cart)
   return (
