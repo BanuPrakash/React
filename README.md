@@ -1105,5 +1105,79 @@ useMemo() is used to memoize the return value of a function
 
 Redux: Predictable State Managenent
 
+===========
+
+Day 4
+
+Recap of Day 3:
+```
+ * Completed the application with
+ 1) Context, reducers
+ 2) useParams()
+ 3) Controlled and Unctrolled components
+ 4) json-server to FAKE RESTApis
+ 5) axios --> Http client library to perform CRUD operation [instead of fetch]
+
+* React 18 vs older versions
+1) React 18 is completly based on Fiber Architecture instead of older Stack Architecture
+Fiber node --> Perform Unit if Work [thread]
+
+Fiber node ---> High Priority Thread can execute <<User event threads>> --->Fiber Node
+
+2) Automatic Batching
+useEffect(() => {
+  api call
+  setThat();
+  setThis();
+  setSomeThing();
+})
+
+3) useMemo() is different from memo()
+
+memo() is to memoize a Component Props to avoid re-rendering ==> shouldComponentUpdate()
+
+useMemo() is to memoize the result of function call;
+  Assume Parent passes "no" to the component
+  if parent has passed 34 previouly, next time also it passes 34
+  let result = useMemo(() => fibanocci(no), [no]);
+
+useCallback() check:
+https://codepen.io/banuprakash/pen/JjQymvM?editors=1011
+```
+
+Predictable State Managenment:
+1) Context was never intended for state management
+Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+
+2) Flux
+3) Redux
+4) Mobx
+5) ObservableRx
+6) Recoil
+7) zustand
+
+Why do we need 3rd party state management libraries?
+1) Predictable
+2) Time travel debugging
+3) Context is not good for big application; lots of state exists in bigger application like
+profile, products, cart, messages, notifications,...
+4) Developers working on state managemnet need not know anything about UI. State manageent library once built can be integrated with any UI libraries like :Angular, Vue, Svelte, React, simple JS, jQuery or can be used even in server side code
+5) Good for Micro-frontend. Micro frontends are a front-end web development pattern that breaks down applications into smaller, independent modules
+
+=================================================
+
+function mapDispatchToProps(dispatch) {
+  return {
+    addToCart: item => dispatch({type:'ADD_TO_CART', payload: item}),
+    increment: id => dispatch({type:'INCREMENT', payload: id}),
+    clear: () => dispatch({type:'CLEAR_CART'})
+  }
+}
+
+
+props.addToCart(...)
+
+
+
 
 
