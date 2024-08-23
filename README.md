@@ -1186,4 +1186,10 @@ https://immerjs.github.io/immer/
 
 contactmanager> npm i redux react-redux
 
-
+state = {
+  contacts: [],
+  profile: {
+      "avatar": "banu.png", 
+      "user": "Banu Prakash"
+  }
+}
