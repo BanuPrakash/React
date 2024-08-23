@@ -1177,7 +1177,13 @@ function mapDispatchToProps(dispatch) {
 
 props.addToCart(...)
 
+https://immutable-js.com/
+https://immerjs.github.io/immer/
 
+===========
 
+ npx create-react-app contactmanager
+
+contactmanager> npm i redux react-redux
 
 
