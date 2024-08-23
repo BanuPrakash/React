@@ -5,7 +5,7 @@ import ProductList from './components/ProductList'
 import Default from './components/Default'
 import NavbarComponent from './components/NavbarComponent'
 import { lazy, Suspense } from 'react';
-
+import Customers from './components/Customers';
 
 // below components are not part of "bundle.js"
 const CartComponent = lazy(() => import('./components/CartComponent'));
@@ -20,6 +20,7 @@ function App() {
       <NavbarComponent />
       <Routes>
         <Route path='/products' element={<ProductList />} />
+        <Route path='/customers' element={<Customers />} />
         <Route path='/cart' element={
           <Suspense fallback={<h1>Loading Cart....</h1>}>
             <CartComponent />

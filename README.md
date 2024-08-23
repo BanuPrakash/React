@@ -1300,4 +1300,23 @@ Async logic redux needs middleware like:
 * Saga
 
 
+RTK Query: advance data fetching and caching tool instead of createSlice and createAsyncThunk
 
+RTK Polling
+
+```
+const {data} = useCustomerQuery(id, {
+  pollingInterval : 3000
+});
+
+return  <div>
+  {data...}
+</div>
+
+```
+
+https://theodorusclarence.com/blog/nextjs-fetch-method#code-example
+
+https://remix.run/docs/en/main
+
+https://medium.com/@future_fanatic/next-js-vs-remix-choosing-the-right-framework-for-your-project-54a9753fcae9
