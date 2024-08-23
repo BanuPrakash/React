@@ -1289,3 +1289,15 @@ useSelector() The selector is approximately equivalent to the mapStateToProps ar
 
 useDispatch() The selector is approximately equivalent to the mapDispatchToProps argument to connect conceptually.
 
+==================
+Redux is synchronous: --> dispatch action ==> state updates --> update state passed to component to rerender
+
+Redux Async logic
+https://redux.js.org/tutorials/fundamentals/part-6-async-logic
+
+Async logic redux needs middleware like:
+* Thunk
+* Saga
+
+
+

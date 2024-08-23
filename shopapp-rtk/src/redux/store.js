@@ -1,12 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { cartReducer } from "./cartSlice";
 import {profileReducer} from "./profileSlice"
+import { productReducer } from "./productSlice";
 
 const store = configureStore({
     // similar to combineReducers --> Root Reduces
     reducer: {
         cart: cartReducer,
-        profile: profileReducer
+        profile: profileReducer,
+        productsState: productReducer 
     }
 })
 
