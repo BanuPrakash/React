@@ -1225,3 +1225,24 @@ function App(props) {
   );
 }
 ```
+
+Where Redux should not be used?
+1) result of API call ==> Context is good enough , avoid this also --> Pagination
+
+caniuse.com
+
+Where to use?
+1) client has to manage the data until it pushes to the server
+like: shopping cart, multipage form submission, profile update, custom settings
+
+=====================
+
+Redux Toolkit
+https://redux-toolkit.js.org/ ==> simplify Redux and advance features
+
+* Simplified with less boilerplate code
+* Opinionated: Many things are configured out of box like REDUX_DEVTOOLS_EXTENSION is included 
+* built-in immutable update logic
+* lots of additional features included, not just plain state management
+
+Covert "shopapp" to use RTK instead of Context
