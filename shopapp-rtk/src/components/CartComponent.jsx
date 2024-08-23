@@ -1,36 +1,28 @@
 import React from 'react'
-import { useContext } from 'react'
-import { CartContext } from '../context/CartContextProvider'
 import Button from 'react-bootstrap/Button';
-import CartList from './CartList';
 
 export default function CartComponent() {
-  let { cartItems, total, checkout } = useContext(CartContext);
-  if (!cartItems || cartItems.length == 0) {
-    return <h1>Cart is Empty!!!</h1>
-  } else {
-    return (
-      <div className='container'>
-        {
-          cartItems.map(item => <CartList product={item} key={item.id} />)
-        }
-        <div className='row'>
-          <div className='col-md-8'>
-            &nbsp;
-          </div>
-          <div className='col-md-2'>
-            Total: {total}
-          </div>
+
+  return (
+    <div className='container'>
+
+      <div className='row'>
+        <div className='col-md-8'>
+          &nbsp;
         </div>
-        <div className='row'>
-          <div className='col-md-8'>
-            &nbsp;
-          </div>
-          <div className='col-md-2'>
-            <Button onClick={() => checkout()}>Checkout</Button>
-          </div>
+        <div className='col-md-2'>
+          Total: {0}
         </div>
       </div>
-    )
-  }
+      <div className='row'>
+        <div className='col-md-8'>
+          &nbsp;
+        </div>
+        <div className='col-md-2'>
+          <Button >Checkout</Button>
+        </div>
+      </div>
+    </div>
+  )
 }
+

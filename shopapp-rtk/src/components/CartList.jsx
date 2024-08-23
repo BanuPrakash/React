@@ -1,12 +1,11 @@
 import React from 'react'
-import { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
-import { CartContext } from '../context/CartContextProvider';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 export default function CartList({ product }) {
   let { id, image, title, price, quantity, amount } = product;
-  let {increment} = useContext(CartContext);
+
   return (
     <div className='row my-2'>
       <div className='col-md-2'>
@@ -18,7 +17,7 @@ export default function CartList({ product }) {
       <div className='col-md-2'>
         <Button>&nbsp; - &nbsp;</Button>
         &nbsp; Qty: {quantity} &nbsp;
-        <Button onClick={() => increment(id)}>&nbsp; + &nbsp;</Button>
+        <Button >&nbsp; + &nbsp;</Button>
       </div>
       <div className='col-md-2'>
         Price: {price}

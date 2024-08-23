@@ -1245,4 +1245,16 @@ https://redux-toolkit.js.org/ ==> simplify Redux and advance features
 * built-in immutable update logic
 * lots of additional features included, not just plain state management
 
-Covert "shopapp" to use RTK instead of Context
+Convert "shopapp" to use RTK instead of Context
+1) download shopapp-rtk.zip
+2) shopapp-rtk> npm i @reduxjs/toolkit react-redux
+3) remove references to Context
+* delete context and reducers folder
+* index.js remove CartContextProvider
+* NavbarComponent.jsx
+* ProductCard.jsx
+* CartList.jsx
+* CartComponent.jsx
+
+shopapp-rtk % npx json-server --watch data.json --port 1234
+shopapp-rtk % npm start
